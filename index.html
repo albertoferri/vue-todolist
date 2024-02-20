@@ -38,7 +38,8 @@
 
         <div class="add-task-container">
             <div class="add-task input-group mb-3">
-                <input v-model="newTodoText" type="text" class="form-control" placeholder="Inserisci un nuovo to-do">
+                <!-- bonus 1 aggiunto tasto enter per inviare -->
+                <input v-model="newTodoText" type="text" class="form-control" placeholder="Inserisci un nuovo to-do" @keyup.enter="addTodo">
                 <button @click="addTodo" class="btn btn-outline-light fw-bold">ADD</button>
             </div>
         </div>
