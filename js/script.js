@@ -32,24 +32,24 @@ createApp({
       };
     },
     methods: {
-        // MILESTONE 2
-        // Visualizzare a fianco ad ogni item ha una ":x:": cliccando su di essa, il todo viene rimosso dalla lista.
-        deleteTodo(index) {
-          this.todos.splice(index, 1);
-        },
+      // MILESTONE 2
+      // Visualizzare a fianco ad ogni item ha una ":x:": cliccando su di essa, il todo viene rimosso dalla lista.
+      deleteTodo(index) {
+        this.todos.splice(index, 1);
+      },
 
-        // MILESTONE 3
-        // Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, 
-        // il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
-        addTodo() {
-            const trimmedText = this.newTodoText.trim();
-            if (trimmedText !== '') {
-              this.todos = [...this.todos, { text: trimmedText, done: false }];
-              this.newTodoText = '';
-            }
-        },
-        toggleDone(index) {
-            this.todos[index].done = !this.todos[index].done;
-        },
-      }
-    }).mount('#app');
+      // MILESTONE 3
+      // Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, 
+      // il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
+      addTodo() {
+          const trimmedText = this.newTodoText.trim();
+          if (trimmedText !== '') {
+            this.todos = [...this.todos, { text: trimmedText, done: false }];
+            this.newTodoText = '';
+          }
+      },
+      toggleDone(index) {
+          this.todos[index].done = !this.todos[index].done;
+      },
+    }
+}).mount('#app');
