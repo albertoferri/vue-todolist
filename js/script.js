@@ -48,5 +48,8 @@ createApp({
               this.newTodoText = '';
             }
         },
+        toggleDone(index) {
+            this.todos[index].done = !this.todos[index].done;
+        },
       }
     }).mount('#app');
