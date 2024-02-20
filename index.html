@@ -30,7 +30,7 @@
             <ul class="list-group">
                 <li v-for="(todo, index) in todos" :key="index" class="task list-group-item d-flex justify-content-between align-items-center">
                   <span :class="{ 'completed': todo.done }">{{ todo.text }}</span>
-                  <i class="fa-solid fa-xmark"></i>
+                  <i @click="deleteTodo(index)" class="fa-solid fa-xmark"></i>
                 </li>
             </ul>
 
