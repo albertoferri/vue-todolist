@@ -1,6 +1,5 @@
-.task .fa-xmark {
-    font-size: 1.8em;
-    color: darkred;
+.task .fa-trash-can {
+    font-size: 1.6em;
 
     cursor: pointer;
 }
