@@ -1,0 +1,9 @@
+.task .fa-xmark {
+    font-size: 1.8em;
+    color: darkred;
+
+    cursor: pointer;
+}
+.completed {
+    text-decoration: line-through;
+}
